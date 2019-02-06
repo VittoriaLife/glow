@@ -1,0 +1,55 @@
+.quote {
+  position: relative;
+  top: 110px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.quote__text {
+  font-size: 24px;
+  line-height: 32px;
+  color: #848484;
+}
+
+.quote__author {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-style: normal;
+}
+
+.quote__counters-box {
+  position: relative;
+  margin-top: 30px;
+}  
+
+.quote__counters {
+  position: relative;
+
+  &--first {
+    right: 25px;
+
+    &::after{
+      background-color: #e74c3c;
+    }
+  }
+
+  &--second {
+    right: 10px;
+  }
+
+  &--third {
+    left: 15px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #e74c3c;
+    border-radius: 50%;
+  }
+ 
+}
+  

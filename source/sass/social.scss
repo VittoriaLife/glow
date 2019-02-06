@@ -1,0 +1,52 @@
+.social__wrapper {
+  background-image: url("../img/footer-background.jpg");
+}
+
+.social {
+  width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 55px;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.social__email {
+  width: 340px;
+  padding: 20px 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+::-webkit-input-placeholder { 
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff; 
+}
+::-moz-placeholder { 
+  font-size: 18px;
+  line-height: 18px;
+ color: #ffffff; 
+} /* Firefox 19+ */
+
+:-moz-placeholder  { 
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff; } /* Firefox 18- */
+:-ms-input-placeholder { 
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff; 
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}

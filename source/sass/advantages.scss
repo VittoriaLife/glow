@@ -1,52 +1,86 @@
 .advantages {
-    width: 1180px;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
+  width: 1180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
   
-  .advantages__title-wrapper {
-    margin-bottom: 100px;
-    text-align: center;
-  }
+.advantages__title-wrapper {
+  margin-bottom: 100px;
+  text-align: center;
+}
   
-  .advantages__title {
-    margin-top: 55px;
-    font-size: 30px;
-    line-height: 18px;
-    color: #222222;
-  }
+.advantages__title {
+  margin-top: 55px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #222222;
+}
   
-  .advantages__description {
-    padding-right: 101px;
-    padding-left: 123px;
-    font-size: 16px;
-    line-height: 26px;
-    color: #848484;
-  }
+.advantages__description {
+  padding-right: 101px;
+  padding-left: 123px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+}
   
-  .advantages__list {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  }
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
   
-  .advantages__item {
-    width: 380px;
-    text-align: center;
+.advantages__item {
+  position: relative;
+  margin-bottom: 25px;
+  width: 380px;
+  text-align: center;
+
+  &:not(:nth-child(3n))::after {
+    content: "";
+    position: absolute;
+    left: 255px;
+    top: 60px;
+    width: 235px;
+    height: 2px;
+    background-color: #e5e5e5;
+    transform: rotate(90deg);
   }
+
+  &--after {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &--after::before {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 10px;
+    width: 320px;
+    height: 2px;
+    background-color: #e5e5e5;
+  }
+
+  &--after:not(:nth-child(3n))::after {
+    top: 160px;
+  }
+}
   
-  .advantages__name {
-    font-size: 24px;
-    line-height: 18px;
-    color: #222222;
-  }
+.advantages__name {
+  font-size: 24px;
+  line-height: 18px;
+  color: #222222;
+}
   
-  .advantages__words {
-    padding-left: 23px;
-    padding-right: 35px;
-    font-size: 16px;
-    line-height: 26px;
-    color: #848484;
-  }
+.advantages__words {
+  padding-left: 23px;
+  padding-right: 35px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+}

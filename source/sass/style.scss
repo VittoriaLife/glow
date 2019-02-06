@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 
 @import "fonts.scss";
 @import "intro.scss";
@@ -5,3 +10,5 @@
 @import "about.scss";
 @import "advantages.scss";
 @import "packages.scss";
+@import "quote.scss";
+@import "social.scss";
