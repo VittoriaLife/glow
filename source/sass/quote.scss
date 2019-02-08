@@ -35,7 +35,7 @@
   }
 
   &--second {
-    right: 10px;
+    right: 5px;
   }
 
   &--third {
@@ -45,8 +45,8 @@
   &::after {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     border: 2px solid #e74c3c;
     border-radius: 50%;
   }

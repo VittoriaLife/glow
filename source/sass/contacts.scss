@@ -1,0 +1,31 @@
+.contacts {
+  background-color: #e8e8e8;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 1180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 55px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 540px;
+  list-style: none;
+}
+
+.contacts__link {
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  cursor: pointer;
+}

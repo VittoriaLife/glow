@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head> 
   <body>
+
+    <div style="display:none">
+     <include src="build/img/sprite.svg"></include>
+    </div>
+    
     <header>
       <section class="intro">
         <div class="intro-wrapper">
           <a class="intro__link-logo">
-            <img class="intro__logo" src="img/title.png" width="144" height="78">
+            <img class="intro__logo" src="img/title.png" srcset="img/title.webp" width="144" height="78">
           </a>
           <ul class="intro__list">
             <li class="intro__item">
@@ -56,7 +61,7 @@
           </div>
         </ul>
         <picture>
-          <img class="features__phone-image" src="img/phone.png" width="464" height="806">
+          <img class="features__phone-image" src="img/phone.png" srcset="img/phone.webp" width="464" height="806">
         </picture>
       </section>
         <div class="about__wrapper">
@@ -79,7 +84,7 @@
                 </ul>  
               </div>
              <div class="about__inner">
-                <img src="img/video.jpg" width="500" height="307">
+                <img src="img/video.jpg" srcset="img/video.webp" width="500" height="307">
              </div>
           </section> 
         </div>
@@ -96,27 +101,27 @@
             <p class="advantages__words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__image" src="img/icon-marketable.svg"  width="46" height="46">
+            <img class="advantages__image" src="img/icon-marketable.svg" width="46" height="46">
             <h2 class="advantages__name">Marketable</h2>
             <p class="advantages__words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__image" src="img/icon-edit-photos.svg" width="48" height="48" >
+            <img class="advantages__image" src="img/icon-edit-photos.svg" width="48" height="48">
             <h2 class="advantages__name">Edit Photos</h2>
             <p class="advantages__words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
           </li>
-          <li class="advantages__item advantages__item--after" >
+          <li class="advantages__item advantages__item--after">
             <img class="advantages__image" src="img/icon-edit-colors.svg" width="42" height="47">
             <h2 class="advantages__name">Edit Colors</h2>
             <p class="advantages__words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
           </li>
           <li class="advantages__item advantages__item--after">
-            <img class="advantages__image" src="img/icon-user-friendly.svg"  width="48" height="48">
+            <img class="advantages__image" src="img/icon-user-friendly.svg" width="48" height="48">
             <h2 class="advantages__name">User Friendly</h2>
             <p class="advantages__words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
           </li>
           <li class="advantages__item advantages__item--after">
-            <img class="advantages__image" src="img/icon-editable.svg"  width="48" height="48">
+            <img class="advantages__image" src="img/icon-editable.svg" width="48" height="48">
             <h2 class="advantages__name">100% Editable</h2>
             <p class="advantages__words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
           </li>
@@ -211,17 +216,19 @@
       </section>
     </main>
     <footer>
-        <section class="social">
-          <div class="social__wrapper">
-            <div class="social__inner">
-              <h1 class="social__title">Subscribe to Email Newsletter</h1>
-              <form class="social__subscribe">
-                <input type="email" class="social__email" placeholder="Enter Email Address...">
-                <button class="social__btn" type="submit">Subscribe</button>
+        <section class="subscribe">
+          <div class="subscribe__wrapper">
+            <div class="subscribe__inner">
+              <h1 class="subscribe__title">Subscribe to Email Newsletter</h1>
+              <form class="subscribe__form">
+                <input type="email" class="subscribe__email" placeholder="Enter Email Address...">
+                <button class="subscribe__btn" type="submit">Subscribe</button>
               </form>
             </div>
-          </div>  
-          <div class="social__media">
+          </div> 
+        </section> 
+        <section class="social">
+          <div class="social__wrapper">
             <h1 class="social__list-title">Say Hi & Get in Touch</h1>
             <p class="social__words">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.</p>
             <ul class="social__list">
@@ -229,27 +236,47 @@
                 <a class="social__link" href="#"><img src="img/icon-tw.svg" width="17" height="13"></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#"><img src="img/icon-fb.svg" width="9" height="17"></a>
+                <a class="social__link social__link--fb" href="#"><img src="img/icon-fb.svg" width="9" height="17"></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#"><img src="img/icon-pinter.svg" width="20" height="20"></a>
+                <a class="social__link social__link--pinter" href="#"><img src="img/icon-pinter.svg" width="20" height="20"></a>
               </li>
               <li class="social__item"> 
-                <a class="social__link" href="#"><img src="img/icon-ggle.svg" width="34" height="34"></a>
+                <a class="social__link social__link--ggl" href="#"><img src="img/icon-ggle.svg" width="19" height="18"></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#"><img src="img/icon-inn.svg" width="15" height="15"></a>
+                <a class="social__link social__link--inn" href="#"><img src="img/icon-inn.svg" width="15" height="15"></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#"><img src="img/icon-youtube.svg" width="18" height="22"></a>
+                <a class="social__link social__link--youtube" href="#"><img src="img/youtube.png" srcset="img/youtube.webp" width="18" height="22"></a>
               </li>
             </ul>
           </div> 
         </section>
-       
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link">Contact </a>
+              </li> 
+              <li class="contacts__item">
+                <a class="contacts__link">Download</a>
+              </li> 
+              <li class="contacts__item">
+                <a class="contacts__link">Press</a>
+              </li> 
+              <li class="contacts__item">
+                <a class="contacts__link">Email</a>
+              </li> 
+              <li class="contacts__item">
+                <a class="contacts__link">Support </a>
+              </li> 
+              <li class="contacts__item">
+                <a class="contacts__link">Privacy Policy</a>
+              </li> 
+            </ul>
+          </div>
+        </section>
     </footer>
-
-
-      
   </body>
 </html>
