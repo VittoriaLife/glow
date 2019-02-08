@@ -482,7 +482,8 @@ body {
 .packages__btn-wrapper {
   width: 140px;
   padding: 33px 80px;
-  background-color: #322e2e; }
+  background-color: #322e2e;
+  cursor: pointer; }
   .packages__btn-wrapper--deluxe {
     background-color: #e74c3c; }
 
@@ -609,7 +610,8 @@ body {
   color: #ffffff;
   background-color: #e74c3c;
   border: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .social__wrapper {
   display: flex;
